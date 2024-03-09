@@ -108,41 +108,59 @@ https://github.com/dhruv14385/node-todo-cicd.git
  
 •	Install NodeJS in this directory and run the app as mentioned before. You should be able to see the app as shown in the last screenshot.   
 •	Now to check whether the code is integrated or not properly, we will do some minor change in the code. Go to following file in Github in the repository.   
-views/todo.ejs
-•	In line 92, where it is written  
+views/todo.ejs  
+•	In line 92, where it is written   
 &lt;h1&gt;Todo List - Made using Node&lt;h1&gt;  
 Change it to something like  
-<h1>Todo List - Made using Node by a Devops Engineer</h1>  
+&lt;h1&gt;Todo List - Made using Node by a Devops Engineer&lt;h1&gt;    
 and commit changes.  
 •	Build the code in Jenkins again and refresh the app in the browser. You will see the changes have taken place.
- 
-•	Hence it is proven that code has been integrated with Jenkins.
+
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/91e3f3fe-8d83-4956-94e0-9e2b3e0f7bf7)  
+  
+•	Hence it is proven that code has been integrated with Jenkins.  
 
 
-Deployment option 3: Docker
-•	Install Docker
+## Deployment option 3: Docker  
+•	Install Docker  
+```
 sudo apt install docker.io
-•	Change your directory to ‘node-todo-cicd’ and build image from Dockerfile within that directory. This Dockerfile has base image of NodeJS. It exposes port 8000 and run the app when you will create a container from it.
+```
+•	Change your directory to ‘node-todo-cicd’ and build image from Dockerfile within that directory. This Dockerfile has base image of NodeJS. It exposes port 8000 and run the app when you will create a container from it.  
+```
 sudo docker build . -t todo-note-app
+```
 •	Create a container from the image
+```
 sudo docker run -d --name node-todo-app -p 8000:8000 todo-note-app
-•	Open browser and type <EC2-Public-IPv4>:8000 and you should see the app running, this time on a Docker container.
-•	Stop this container before moving on to next option.
+```
+•	Open browser and type &lt;EC2-Public-IPv4&gt;:8000 and you should see the app running, this time on a Docker container.  
+•	Stop this container before moving on to next option.  
+```
 sudo docker kill <container ID>
-Deployment option 4: Continuous Deployment on Docker container through Jenkins 
-•	Now, for Continuous Deployment, as a first step, install a plugin called ‘GitHub Integration’ on Jenkins.
-•	Go to repository settings and add a Webhook with following configuration.
+```
+## Deployment option 4: Continuous Deployment on Docker container through Jenkins  
+•	Now, for Continuous Deployment, as a first step, install a plugin called ‘GitHub Integration’ on Jenkins.  
+•	Go to repository settings and add a Webhook with following configuration.  
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/c6660aa8-1727-40f1-859f-225057326149)  
  
-•	And confirm that it working by checking the green tick. You may need to restart Jenkins.
+•	And confirm that it working by checking the green tick. You may need to restart Jenkins.  
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/f1ce81fd-6db1-4cfb-978c-21f29830a778)  
  
-•	In Jenkins, configure the project with following Build trigger
+•	In Jenkins, configure the project with following Build trigger  
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/f34fa7a4-8681-4279-b769-aa942333a654)  
  
-•	Enter following commands in the build steps section and save configuration.
+•	Enter following commands in the build steps section and save configuration.  
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/505179c5-3f56-42bc-99f7-fd2b9c44f8ee)  
  
-•	Go to terminal and give permission to Jenkins to connect to docker
+•	Go to terminal and give permission to Jenkins to connect to docker  
+```
 sudo usermod -aG docker Jenkins
-•	Restart Jenkins from terminal
+```
+•	Restart Jenkins from terminal  
+```
 sudo systemctl restart Jenkins
-•	Logout and Login Jenkins in the browser.
-•	Now make any changes to the code in line 92 and commit changes. This should trigger build in Jenkins and container should be built. After successful build, you can check the app in the browser.
-•	You may need to change name of the container and image in the ‘Build steps’ configuration of the project as shown in the screenshot above if you are getting error regarding that.
+```
+•	Logout and Login Jenkins in the browser.  
+•	Now make any changes to the code in line 92 and commit changes. This should trigger build in Jenkins and container should be built. After successful build, you can check the app in the browser.  
+•	You may need to change name of the container and image in the ‘Build steps’ configuration of the project as shown in the screenshot above if you are getting error regarding that.  
