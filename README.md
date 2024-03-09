@@ -1,4 +1,4 @@
-# In this project, I will deploy a NodeJS application to an EC2 instance and Docker container in various ways.   
+# In this project, I will deploy a NodeJS application to an EC2 instance and a Docker container in various ways.   
 Below is the Github repository link.  
 
 ```
