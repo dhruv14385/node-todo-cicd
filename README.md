@@ -73,14 +73,22 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 •	Install suggested plugins   
 •	Create first admin user by filling in the form
 •	On Jenkins Dashboard, click on ‘Create a job’.   
+
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/1bc5b3eb-8788-46e8-82b4-e847ada57b0b)  
  
-•	On the next screen, name your job and select Freestyle project. After hitting OK, you will be redirected to Configure page. Add some description about the job. Select ‘GitHub project’ and enter project URL as below.
+•	On the next screen, name your job and select Freestyle project. After hitting OK, you will be redirected to Configure page. Add some description about the job. Select ‘GitHub project’ and enter project URL as below.  
+```
 https://github.com/dhruv14385/node-todo-cicd
-•	Scroll down and under ‘Source Code Management’, select ‘Git’ and enter Repository URL as below.
+```
+•	Scroll down and under ‘Source Code Management’, select ‘Git’ and enter Repository URL as below.  
+```
 https://github.com/dhruv14385/node-todo-cicd.git
-•	Under ‘Credentials’, click Add and then Jenkins.
- 
-•	Go to terminal and generate SSH keys.
+```
+•	Under ‘Credentials’, click Add and then Jenkins.  
+
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/70bc9b35-3e7a-4b8e-86f6-6e1ce3015df1)  
+
+•	Go to terminal and generate SSH keys.  
 •	Go to Github settings 
  
 •	Copy the public key from terminal and paste it here.
