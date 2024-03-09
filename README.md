@@ -35,10 +35,13 @@ node app.js
 ![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/e006b4b2-0c80-4aee-866f-b5c2d64e9e81)
 
  
-•	Go to instance connect and press Ctrl+C to come back to command prompt. The app will stop working. We can now go to option 2. Keep the instance running.
-Deployment option 2: On EC2 instance by integrating code with Jenkins
-•	Install Java version 11
+•	Go to instance connect and press Ctrl+C to come back to command prompt. The app will stop working. We can now go to option 2. Keep the instance running.  
+## Deployment option 2: On EC2 instance by integrating code with Jenkins  
+•	Install Java version 11  
+```
 sudo apt install openjdk-11-jre
+```
+
 •	Open port 8080 to your IP on SG.
 •	Install Jenkins. Enter following commands one after other. 
 o	sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
