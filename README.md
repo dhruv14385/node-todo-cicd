@@ -30,7 +30,8 @@ sudo npm install
 ```
 node app.js
 ```
-•	Open browser and type <EC2-Public-IPv4>:8000. You should see the app running like below.  
+•	Open browser and type (EC2-Public-IPv4):8000. You should see the app running like below.   
+
 ![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/e006b4b2-0c80-4aee-866f-b5c2d64e9e81)
 
  
