@@ -42,26 +42,37 @@ node app.js
 sudo apt install openjdk-11-jre
 ```
 
-•	Open port 8080 to your IP on SG.
-•	Install Jenkins. Enter following commands one after other. 
-o	sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+•	Open port 8080 to your IP on SG.  
+•	Install Jenkins. Enter following commands one after other.   
+```
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
-o	echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+```
+```
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
 /etc/apt/sources.list.d/jenkins.list > /dev/null
-o	sudo apt-get update
-o	sudo apt-get install jenkins
-o	sudo systemctl enable jenkins
-o	sudo systemctl start jenkins
-•	Confirm that Jenkins is running with following command.
+```
+```
+sudo apt-get update
+sudo apt-get install jenkins
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
+```
+•	Confirm that Jenkins is running with following command.  
+```
 sudo systemctl status Jenkins
-•	Open browser and open Jenkins by typing <EC2-Public-IPv4>:8080. You should see the screen like below.
+```
+•	Open browser and open Jenkins by typing (EC2-Public-IPv4):8080. You should see the screen like below.  
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/2f540520-fb79-4ae0-bc3e-1e6ca3869c11)  
  
-•	Check and copy paste the password in the file shown in red letters
+•	Check and copy paste the password in the file shown in red letters  
+```
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-•	Install suggested plugins 
+```
+•	Install suggested plugins   
 •	Create first admin user by filling in the form
-•	On Jenkins Dashboard, click on ‘Create a job’. 
+•	On Jenkins Dashboard, click on ‘Create a job’.   
  
 •	On the next screen, name your job and select Freestyle project. After hitting OK, you will be redirected to Configure page. Add some description about the job. Select ‘GitHub project’ and enter project URL as below.
 https://github.com/dhruv14385/node-todo-cicd
