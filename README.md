@@ -30,7 +30,7 @@ sudo npm install
 ```
 node app.js
 ```
-•	Open browser and type <EC2-Public-IPv4>:8000. You should see the app running like below.
+•	Open browser and type <EC2-Public-IPv4>:8000. You should see the app running like below.  
  
 •	Go to instance connect and press Ctrl+C to come back to command prompt. The app will stop working. We can now go to option 2. Keep the instance running.
 Deployment option 2: On EC2 instance by integrating code with Jenkins
