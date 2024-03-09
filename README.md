@@ -9,17 +9,27 @@ I will use EC2 Ubuntu instance.
 •	We can simply deploy the app on EC2 without any integration to Jenkins.  
 •	Launch an EC2 Ubuntu instance. Make sure that the SG have port 8000 open to your IP. Connect using EC2 instance connect.   
 •	Get updates.  
-sudo apt update 
-•	Clone the repository
+```
+sudo apt update
+```
+•	Clone the repository  
+```
 git clone https://github.com/dhruv14385/node-todo-cicd.git
-•	Go to directory ‘node-todo-cicd’
+```
+•	Go to directory ‘node-todo-cicd’  
+```
 cd node-todo-cicd
-•	Install NodeJS on EC2
+```
+•	Install NodeJS on EC2  
+```
 sudo apt install nodejs
 sudo apt install npm
 sudo npm install
-•	Run the app
+```
+•	Run the app  
+```
 node app.js
+```
 •	Open browser and type <EC2-Public-IPv4>:8000. You should see the app running like below.
  
 •	Go to instance connect and press Ctrl+C to come back to command prompt. The app will stop working. We can now go to option 2. Keep the instance running.
