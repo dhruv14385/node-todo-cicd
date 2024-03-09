@@ -1,10 +1,10 @@
-In this project, I will deploy a NodeJS application to an EC2 instance and Docker container in various ways. Below is the Github repository link.  
+# In this project, I will deploy a NodeJS application to an EC2 instance and Docker container in various ways. Below is the Github repository link.  
 
 ```
 https://github.com/dhruv14385/node-todo-cicd
 ```
 I will use EC2 Ubuntu instance.  
-# Deployment option 1: On EC2 instance
+## Deployment option 1: On EC2 instance
 •	We can simply deploy the app on EC2 without any integration to Jenkins.
 •	Launch an EC2 Ubuntu instance. Make sure that the SG have port 8000 open to your IP. Connect using EC2 instance connect. 
 •	Get updates.
