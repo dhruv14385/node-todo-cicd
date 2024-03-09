@@ -90,22 +90,30 @@ https://github.com/dhruv14385/node-todo-cicd.git
 
 •	Go to terminal and generate SSH keys.  
 •	Go to Github settings 
- 
+
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/5508f4f0-5d0c-4909-80c0-8b4cef0394c4)  
+
 •	Copy the public key from terminal and paste it here.
+
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/a2eccac9-5e68-4688-9d7b-d832bef9433d)  
  
-•	Copy private key from terminal and fill up information and paste it as shown in the screenshots below.
+•	Copy private key from terminal and fill up information and paste it as shown in the screenshots below.  
+
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/68daa494-31d3-41c5-a9e4-6acd9523370a)   
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/4dddc557-4f95-4261-a1b4-d187e3f3b83d)  
  
+•	Save the changes and click on ‘Build Now’ to build the code. It should be successful. You can check Console Output. Go to terminal and you should see the repository would be cloned in the directory highlighted in the screenshot below.  
+
+![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/f9191d08-7c5b-4494-8195-1ec4b24f41f3)  
  
-•	Save the changes and click on ‘Build Now’ to build the code. It should be successful. You can check Console Output. Go to terminal and you should see the repository would be cloned in the directory highlighted in the screenshot below.
- 
-•	Install NodeJS in this directory and run the app as mentioned before. You should be able to see the app as shown in the last screenshot. 
-•	Now to check whether the code is integrated or not properly, we will do some minor change in the code. Go to following file in Github in the repository.
+•	Install NodeJS in this directory and run the app as mentioned before. You should be able to see the app as shown in the last screenshot.   
+•	Now to check whether the code is integrated or not properly, we will do some minor change in the code. Go to following file in Github in the repository.   
 views/todo.ejs
-•	In line 92, where it is written 
-<h1>Todo List - Made using Node</h1>
-Change it to something like
-<h1>Todo List - Made using Node by a Devops Engineer</h1>
-and commit changes.
+•	In line 92, where it is written   
+<h1>Todo List - Made using Node</h1>  
+Change it to something like  
+<h1>Todo List - Made using Node by a Devops Engineer</h1>  
+and commit changes.  
 •	Build the code in Jenkins again and refresh the app in the browser. You will see the changes have taken place.
  
 •	Hence it is proven that code has been integrated with Jenkins.
