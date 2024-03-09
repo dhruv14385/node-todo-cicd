@@ -1,4 +1,5 @@
-# In this project, I will deploy a NodeJS application to an EC2 instance and Docker container in various ways. Below is the Github repository link.  
+# In this project, I will deploy a NodeJS application to an EC2 instance and Docker container in various ways.   
+Below is the Github repository link.  
 
 ```
 https://github.com/dhruv14385/node-todo-cicd
