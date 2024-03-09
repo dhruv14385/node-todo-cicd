@@ -1,6 +1,6 @@
 In this project, I will deploy a NodeJS application to an EC2 instance and Docker container in various ways. Below is the Github repository link.  
 
-```bash
+```
 https://github.com/dhruv14385/node-todo-cicd
 ```
 I will use EC2 Ubuntu instance.
