@@ -110,7 +110,7 @@ https://github.com/dhruv14385/node-todo-cicd.git
 •	Now to check whether the code is integrated or not properly, we will do some minor change in the code. Go to following file in Github in the repository.   
 views/todo.ejs
 •	In line 92, where it is written  
-"&lt;h1&gt;"Todo List - Made using Node"&lt;h1&gt;"  
+&lt;h1&gt;Todo List - Made using Node&lt;h1&gt;  
 Change it to something like  
 <h1>Todo List - Made using Node by a Devops Engineer</h1>  
 and commit changes.  
