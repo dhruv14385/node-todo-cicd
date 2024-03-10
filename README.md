@@ -37,7 +37,7 @@ node app.js
 
  
 •	Go to instance connect and press Ctrl+C to come back to command prompt. The app will stop working. We can now go to option 2. Keep the instance running.  
-## Deployment option 2: On EC2 instance by integrating code with Jenkins  
+## Deployment option 2: On EC2 instance by continuous integration (CI) of code with Jenkins  
 •	Install Java version 11  
 ```
 sudo apt install openjdk-11-jre
@@ -140,7 +140,7 @@ sudo docker run -d --name node-todo-app -p 8000:8000 todo-note-app
 ```
 sudo docker kill <container ID>
 ```
-## Deployment option 4: Continuous Deployment on Docker container through Jenkins  
+## Deployment option 4: Continuous Deployment (CD) on Docker container through Jenkins  
 •	Now, for Continuous Deployment, as a first step, install a plugin called ‘GitHub Integration’ on Jenkins.  
 •	Go to repository settings and add a Webhook with following configuration.  
 ![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/c6660aa8-1727-40f1-859f-225057326149)  
