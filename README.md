@@ -62,7 +62,7 @@ sudo systemctl start jenkins
 ```
 •	Confirm that Jenkins is running with following command.  
 ```
-sudo systemctl status Jenkins
+service jenkins status
 ```
 •	Open browser and open Jenkins by typing (EC2-Public-IPv4):8080. You should see the screen like below.  
 ![image](https://github.com/dhruv14385/node-todo-cicd/assets/83332524/2f540520-fb79-4ae0-bc3e-1e6ca3869c11)  
